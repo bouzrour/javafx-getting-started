@@ -10,7 +10,7 @@ public class MyChart extends VBox {
         getChildren().add(buildSampleLineChart());
     }
 
-    public   buildSampleLineChart() {
+    public LineChart buildSampleLineChart() {
         XYChart.Series<Double, Double> series = new XYChart.Series<>();
         series.getData().add(new XYChart.Data<>(0.0, 0.0));
         series.getData().add(new XYChart.Data<>(0.7, 0.5));
